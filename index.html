@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Backbone Application</title>
+</head>
+<body>
+
+   <h2>Please select from below link</h2><br>
+   <a href="#/personal">Personal Detail</a>
+   <a href="#/office">Office Detail</a><br><br>
+   <div id="selectDetailtext"></div>
+   <label>Employe Detail</label>
+   <select id="employee"></select>
+
+   <div id="detailBase" style="margin-top: 30px;"></div>
+
+<script type="text/dust" id="employeetmpl">	
+{#.}<option value="{.id}">{.name}</option>{/.}    	
+</script>
+
+<script type="text/dust" id="details_company">	
+{#.}
+    
+	<label> Employee Id : </label><span>{.id}</span><br>
+	<label> Employee Name : </label><span>{.name}</span><br>
+	<label> Employee Designation : </label><span>{.Designation}</span><br>
+	<label> Employee Exp : </label><span>{.Exp} yrs</span><br>
+{/.}    	
+</script>
+
+<script type="text/dust" id="details_personal">	
+{#.}
+<label> Employee Id : </label><span>{.id}</span><br>
+	<label> Employee Name : </label><span>{.name}</span><br>
+	<label> Employee Designation : </label><span>{.Address}</span><br>
+	
+{/.}    	
+</script>
+
+ <script src="js/libs/jquery-3.1.1.min.js" type="text/javascript"></script> 
+ <script src="js/libs/underscore-min.js" type="text/javascript"></script>
+ <script src="js/libs/backbone-min.js" type="text/javascript"></script>
+ <script src="js/libs/lodash.core.js" type="text/javascript"></script>
+ <script src="js/libs/dust-full.min.js" type="text/javascript"></script>
+ 
+
+<script src="js/data/empData.js" type="text/javascript"></script>
+<script src="js/empView.js" type="text/javascript"></script>
+<script src="js/empApp.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{#.}    
+	<label> Employee Id : </label><span>{.id}</span><br>
+	<label> Employee Name : </label><span>{.name}</span><br>
+	<label> Employee Designation : </label><span>{.Designation}</span><br>
+	<label> Employee Exp : </label><span>{.Exp} yrs</span><br>
+{/.}
